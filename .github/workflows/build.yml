@@ -23,6 +23,6 @@ jobs:
         run: |
           my_name=${{ env.MY_NAME }}
           echo "My nombre es $my_name"
-          echo "Print my name form env ${{ env.MY_NAME }}
+          echo "Print my name form env ${{ env.MY_NAME }}"
         
           
