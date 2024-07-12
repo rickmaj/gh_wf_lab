@@ -3,6 +3,9 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on: [push]
 
+env:
+  MY_NAME: "Ricardo"
+
 jobs:
   build:
     name: Build App
@@ -16,5 +19,10 @@ jobs:
         run: |
           echo "hello world"
           echo "Multiple commands"
+      - name: print my name
+        run: |
+          my_name=${{ env.MY_NAME }}
+          echo "My nombre es $my_name"
+          echo "Print my name form env ${{ env.MY_NAME" }}
         
           
