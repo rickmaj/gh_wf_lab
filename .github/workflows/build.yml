@@ -1,0 +1,16 @@
+name: Build Workflow
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+on: [push]
+
+jobs:
+  build:
+    name: Build App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4.1.7
+      - name: list code
+        run: ls -la
+        
+          
